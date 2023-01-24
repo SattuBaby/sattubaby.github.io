@@ -10,6 +10,7 @@ body{
   font-size: 100%;
   margin: 0;
   padding: 0;
+  background-repeat: no-repeat;
 }
 [type="checkbox"]:checked,
 [type="checkbox"]:not(:checked){

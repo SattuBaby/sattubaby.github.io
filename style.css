@@ -11,6 +11,11 @@ html{
     font-size: 45%;
   }
 }
+@media(max-width:364px){
+  html{
+    font-size: 30%;
+  }
+}
 body{
   height: 100vh;
   background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url('https://source.unsplash.com/1600x900/?coding');

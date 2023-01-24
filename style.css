@@ -1,5 +1,7 @@
 body{
   background-image: url("https://source.unsplash.com/1600x900/?coding");
+  width: 100%;
+  
 }
 [type="checkbox"]:checked,
 [type="checkbox"]:not(:checked){

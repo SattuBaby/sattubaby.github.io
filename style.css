@@ -7,19 +7,9 @@ body{
   font-size: 100%;
   margin: 0;
   padding: 0;
-  background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
-body{
-  height: 100vh;
-  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url('https://source.unsplash.com/4096x2160/?coding');
-  font-size: 100%;
-  margin: 0;
-  padding: 0;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  height: auto;
 }
 .main-h{
   justify-content: center;

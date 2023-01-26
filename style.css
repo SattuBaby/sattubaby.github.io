@@ -60,12 +60,20 @@ body{
   color: white;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: lighter;
-  padding-bottom: 10px;
+  padding-bottom: 0.2rem;
+}
+.about img{
+  border-radius: 50%;
+  padding-top: 0.2rem;
+}
+.about a{
+  text-decoration: none;
+  color: white;
 }
 .about{
   font-size: x-large;
-  background: #7c3b3b;
-  border: 0.5rem solid #7c3b3b;
+  border: 0.5rem transparent;
+  background: transparent;
   display: inline-block;
   color: white;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -75,9 +83,71 @@ body{
   text-align: center;
   border-radius: 5rem;
 }
+#more{
+  display: none;
+}
+#readMore{
+  width: 22rem;
+  height: 5rem;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: rgba(17, 17, 17, 0);
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 1rem;
+  font-size: large;
+}
+#readMore:before{
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #f82f2f, #ff6b66, #ff9696, #ffc7c7, #ff0000);
+    position: absolute;
+    top: -0.2rem;
+    left:-0.2rem;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(0.5rem);
+    width: calc(100% + 0.4rem);
+    height: calc(100% + 0.4rem);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 1rem;
+}
+#readMore:active {
+  color: rgb(255, 255, 255)
+}
+#readMore:active:after {
+  background: transparent;
+}
+
+#readMore:hover:before {
+  opacity: 1;
+}
+
+#readMore:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #11111194;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
 .about:hover{
-  background: #ffffff75;
-  transition: 0.5s ease-in-out 0.5s;
+  background: #7c3b3b;
+  border: 0.5rem solid #7c3b3b;
+  transition: 0.5s;
   color: #ffeba7;
 }
 [type="checkbox"]:checked,

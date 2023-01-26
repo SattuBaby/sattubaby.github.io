@@ -1,27 +1,6 @@
 html{
   font-size: 62.5%;
 }
-@media(max-width:999px){
-  html{
-    font-size: 55%;
-  }
-}
-@media (max-width:768px){
-  html{
-    font-size: 45%;
-  }
-  body{
-    background-size: cover;
-    height: max-content;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-  }
-}
-@media(max-height:712 px){
-  html{
-    font-size: 20%;
-  }
-}
 body{
   height: 100vh;
   background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url('https://source.unsplash.com/4096x2160/?coding');

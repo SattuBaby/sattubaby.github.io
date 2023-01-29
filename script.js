@@ -1,17 +1,22 @@
-function myFunction() {
-    var dots = document.getElementById("check");
-    var moreText = document.getElementById("more");
-    var btn = document.getElementById("readMore");
-    var langText = document.getElementById("languages");
-    if (dots.style.display === "none") {
-      dots.style.display = "inline";
-      btn.innerHTML = "Read More ↯"; 
-      moreText.style.display = "none";
-      langText.style.display= "none"
-    } else {
-      dots.style.display = "none";
-      btn.innerHTML = "Read Less ᐱ"; 
-      moreText.style.display = "inline";
-      langText.style.display = "inline";
-    }
-  }
+const btn = document.querySelector('.btn');
+
+const text = document.querySelector('.more');
+
+const about = document.querySelector('.upper');
+
+about
+    .addEventListener('click', e => {
+      const current = e.target;
+
+      const isReadMoreBtn = current.className.includes('btn');
+
+      if (!isReadMoreBtn)
+            return;
+
+        const currentText = e.target.parentNode.querySelector('.more');
+
+        currentText.classList.toggle('more--open');
+
+        current.textContent = current.textContent.includes('Read More...') ? 'Read Less...' : 'Read More...';
+
+    });

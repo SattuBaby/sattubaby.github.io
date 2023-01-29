@@ -1,17 +1,50 @@
 body{
+  margin: 0;
+  padding: 0;
+  background: #222;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-image: url('https://source.unsplash.com/1600x900/?landscape');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 100%;
+
+}
+.heading{
+  margin: 0;
+  padding-top: 1rem;
+  justify-content: center;
+  position: relative;
+  color: white;
+  font-size: 3rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+.heading::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 0.4rem;
+  bottom: 0;
+  left: 0;
+  background-color: #eb0000;
+  transform-origin: bottom right;
+  transition: transform 2s cubic-bezier(1, -0.54, 0, -0.93);
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(0.87, 0.21, 0, 1.15);
+    transition-delay: 0s;
+    transition-property: transform;
+}
+.heading:hover::after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.main{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
-    background: #222;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-image: url('https://source.unsplash.com/1600x900/?landscape');
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-size: 100%;
-    margin: 0;
-    padding: 0;
 }
 .card{
     background: #000000b9;

@@ -26,6 +26,12 @@ body{
   color: white;
   margin-right: 4rem;
 }
+.bitcoin{
+  margin-right: 4rem;
+}
+.ethereum{
+  margin-right: 4rem;
+}
 .main-h{
   margin: 0;
   padding: 0;
